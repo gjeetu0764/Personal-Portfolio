@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <title>Jitendra Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo-png.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times"></i>
+                </ul>
+                <i class="fas fa-bars"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Web Developer</p>
+                <h3>Hi, I am <span><i>Jitendra nath Gupta</i></span> </h3>
+            </div>
+        </div>
+    </div>
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profilephoto.png">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p>Hi! I'm Jitendra nath gupta, I am full stack web developer.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>UI Designing web/App interfaces Using React library</span></li>
+                            <li><span>Website Development Using different programming languages.</span></li>
+                            <li><span>Database Management</span></li>
+                            <li><span>SQL Server Management</span></li>
+                            <li><span>Project Management</span></li>
+                            <li><span>Ecommerce operation management</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li class="company"><span>GLOBUS STORES Pvt Ltd |2023-2024|</span>
+                                <ul class="role">
+                                    <h5>Executive (SQL Server developer)</h5>
+                                    <li class="jobdesc">Proficiency with SQL and specific RDBMS in SQL tools (MySQL,
+                                        PostgreSQL, SQL Server, Oracle).</li>
+                                    <li class="jobdesc">Designing, implementing, and maintaining databases.</li>
+                                    <li class="jobdesc">Worked closely with developers and analysts to define
+                                        requirements and implement database solutions.</li>
+                                    <li class="jobdesc">Automated data loading and transformation processes, reducing
+                                        manual effort by 30%.</li>
+                                    <li class="jobdesc">Material And Purchase Order Creation, MAP update and daily Sales
+                                        upload in SAP.</li>
+                                </ul>
+                            </li>
+                            <li class="company"><span>Vinsys Generation India |2022-2023|</span>
+                                <ul class="role">
+                                    <h5>Full Stack Java Developer</h5>
+                                    <li class="jobdesc">Application development by utilising Java language skills.</li>
+                                    <li class="jobdesc">Implement RESTful APIs and integrate with third-party services.
+                                    </li>
+                                    <li class="jobdesc">Utilize Java frameworks such as Spring Boot or Hibernate for
+                                        efficient development.</li>
+                                    <li class="jobdesc">Work with relational databases like MySQL, PostgreSQL, or
+                                        Oracle, and NoSQL databases like MongoDB.</li>
+                                </ul>
+                            </li>
+                            <li class="company"><span>Kult Cosmetics Pvt. Ltd. |2021-2022|</span>
+                                <ul class="role">
+                                    <h5>Entry Operator </h5>
+                                    <li class="jobdesc">Troubleshoot and resolve basic technical issues related to data
+                                        entry tools and equipment.</li>
+                                    <li class="jobdesc">Database Management, Data Verification, Reporting etc</li>
+                                    <li class="jobdesc">Accurately input data into various databases and systems from
+                                        various sources including physical documents, digital files, and web-based
+                                        applications.</li>
+                                </ul>
+                            </li>
+                            <li class="company"><span>Om Sai Aarogya Care Pvt.Ltd.|2021|</span>
+                                <ul class="role">
+                                    <h5> Supervisor of Patient Care staff</h5>
+                                    <li class="jobdesc">Staff management and take care of patient’s responsibilities.
+                                    </li>
+                                    <li class="jobdesc">Co-ordinate and lead response efforts during medical
+                                        emergencies.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span><b>2022</b></span><br>Java Full Stack Web developer At Vinsys Generation India.
+                            </li><br>
+                            <li><span><b>2021</b></span><br>Bachelor of Information technology from Mumbai University.
+                            </li><br>
+                            <li><span><b>2017</b></span><br>HSC from Maharashtra board.</li><br>
+                            <li><span><b>2015</b></span><br>SSC from Maharashtra board.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h2 class="sub-title">My services</h2>
+            <div class="services-list">
+                <div>
+                    <i class="bi bi-code"></i>
+                    <h2>Web Design, Web application and Websites Development</h2>
+                    <p>Website Design and Redesign, Responsive Design, Graphic Design, E-commerce Solutions, Web
+                        Development Collaboration etc.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="bi bi-file-code"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>We offer a range of specialized services focused on improving the user interface (UI) and user
+                        experience (UX) of digital products.
+                        Our goal is to create intuitive, efficient, and enjoyable experiences for our users. </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="bi bi-code"></i>
+                    <h2>APP Design and Development</h2>
+                    <p>Creating and optimizing the visual and interactive aspects of mobile applications to ensure a
+                        seamless, intuitive, and enjoyable user experience.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="container">
+            <h2 class="sub-title">My Projects</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/download.jfif" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>App connect people around the world.download it from playstore.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/music.jfif" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>App connect people around the world.download it from playstore.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/ecommercelogo.jpg" alt="">
+                    <div class="layer">
+                        <h3>Ecommerce Website </h3>
+                        <p>App connect people around the world.download it from playstore.</p>
+                        <a href="https://gjeetu0764.github.io/Cloth-Galaxy/"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/camp.jpg" alt="">
+                    <div class="layer">
+                        <h3>Excursion Homepage</h3>
+                        <p>online platform designed to provide information, booking services, and other resources
+                            related to excursions and tours.</p>
+                        <a href="https://gjeetu0764.github.io/excursion/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <h2 class="sub-title">Contact Me</h2>
+            <div class="contact">
+
+                <div class="box">
+                    <p>
+                    <address>Sangam nagar,wadala(E)<br>Mumbai-37, Maharashtra</address>
+                    </p>
+                </div>
+                <div class="box">
+                    <p>
+                        <span>jitendra0764@gmail.com</span>
+                    </p>
+                </div>
+                <div class="box">
+                    +91 9076229768
+                </div>
+                <div class="social-icons">
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-whatsapp"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+
+            </div>
+            <button id="cvbtn"><a href="images/jitendra RESUME.docx">DOWNLOAD RESUME</a></button>
+        </div>
+    </div>
+    <footer>Made with <span class="heart">♥</span> in Mumbai</footer>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-content");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.remove("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+</body>
+
+</html>
