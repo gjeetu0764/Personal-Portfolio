@@ -1,15 +1,18 @@
-
-
 :root {
---base-color: #e81e1e;
---highlight-color: aquamarine;
---text-color: #fff;
---background-color: #080808;
---header-background: url(images/IMG-20210810-WA0004.jpg) right no-repeat rgb(56, 52, 52);
---header-background-size: fit-content;
-
+  --base-color: #e81e1e;
+  --highlight-color: aquamarine;
+  --text-color: #fff;
+  --background-color: #080808;
+  --header-background: url(images/IMG-20210810-WA0004.jpg) right no-repeat rgb(56, 52, 52);
+  --header-background-size: fit-content;
 }
-* {
+
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
@@ -31,7 +34,6 @@ body {
 
 .container {
   padding: 10px;
-  margin: 10px;
 }
 
 nav {
@@ -39,19 +41,19 @@ nav {
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
-  
+
   ul {
     li {
       display: inline-block;
       list-style: none;
       margin: 10px 20px;
-      
+
       a {
         color: var(--base-color);
         text-decoration: none;
         font-size: 24px;
         position: relative;
-        
+
         &::after {
           content: '';
           width: 0;
@@ -69,6 +71,11 @@ nav {
       }
     }
   }
+
+  i,
+  .toggler-icon {
+    display: none;
+  }
 }
 
 .logo {
@@ -82,11 +89,11 @@ nav {
   margin-top: 15%;
   margin-left: 15%;
   font-size: 30px;
-  
+
   h2 {
     margin-top: 20px;
     font-size: 40px;
-    
+
     span {
       color: var(--base-color);
     }
@@ -105,7 +112,7 @@ nav {
 
   .about-col-1 {
     flex-basis: 35%;
-    
+
     img {
       width: 100%;
       border-radius: 20px;
@@ -136,7 +143,7 @@ nav {
   cursor: pointer;
   position: relative;
   color: var(--base-color);
-  
+
   &:active {
     width: auto;
     background-color: var(--highlight-color);
@@ -183,7 +190,7 @@ nav {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 40px;
   margin-top: 50px;
-  
+
   div {
     background-color: black;
     padding: 40px;
@@ -205,7 +212,7 @@ nav {
     }
 
     a {
-     
+
       color: var(--text-color);
       font-size: 12px;
       margin-top: 20px;
@@ -305,7 +312,7 @@ nav {
 
 #contact {
   background: rgb(4, 104, 71);
-  
+
   .container {
     justify-content: space-between;
   }
@@ -381,9 +388,6 @@ footer {
 }
 
 /* CSS FOR RESPONSIVENESS */
-nav .fas {
-  display: none;
-}
 
 @media only screen and (max-width: 1024px) {
   .header-text {
@@ -440,22 +444,29 @@ nav .fas {
     border-radius: 50%;
   }
 
-  nav .fas {
+
+  nav .toggler-icon {
+    width: 30px;
     display: block;
-    font-size: 25px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 15px;
+    color: black;
   }
 
   nav ul {
-    position: fixed;
-    left: 0;
+    display: block;
+    position: relative;
+    left: -200px;
     top: 0;
     height: auto;
     width: auto;
-    padding-top: 10px;
 
     li {
       display: block;
       margin-bottom: 10px;
+      padding: 0;
 
       a {
         color: chartreuse;
@@ -464,48 +475,75 @@ nav .fas {
       }
     }
 
-    .fas {
+    i {
+      display: block;
+      font-size: 30px;
       position: absolute;
-      top: 25px;
-      left: 25px;
+      top: 0px;
+      right: 0px;
       cursor: pointer;
+      color: rgb(181, 204, 181);
+    }
+
+  }
+
+
+  .about-col-1,
+  .about-col-2,
+  .contact {
+    flex-basis: 100%;
+  }
+
+  .about-col-2 {
+    font-size: 14px;
+  }
+
+  .about-col-1 {
+    margin-bottom: 25px;
+  }
+
+  .tab-links {
+    font-size: 16px;
+  }
+
+  .services-list {
+
+    display: grid;
+    grid-template-columns: none;
+    grid-gap: 30px;
+    margin-right: 15px;
+
+    div {
+      padding: 20px;
+      font-size: 13px;
+      font-weight: 300;
     }
   }
 
-.services-list{
-  
-  display:grid;
-  grid-template-columns:none;
-  grid-gap: 30px;
-  margin-right: 15px;
-  
-  div {
-    padding: 20px;
-    font-size: 13px;
-    font-weight: 300;}
-}
-
-.work{
-  max-width:fit-content;
-  display: block;
-  margin: 0 auto;
-}
+  .work {
+    max-width: fit-content;
+    display: block;
+    margin: 0 auto;
+  }
 
   #contact .container {
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
   }
 
   #contact .contact {
-    flex-direction: column; 
-    text-align: center; 
-    .box{ padding: 5px;}
+    flex-direction: column;
+    text-align: center;
+
+    .box {
+      padding: 5px;
+    }
   }
 
   #cvbtn {
-    position: static; 
-    width: 80%; 
-    margin-bottom: 10px; 
+    position: static;
+    width: 80%;
+    margin-bottom: 10px;
   }
 
   .row {
